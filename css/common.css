@@ -252,44 +252,71 @@ header .inner .right .menu .submenu li {
 
 /* container */
 .container {
-    height: 500px;
+    width: 100%;
+    height: 1100px;
+    position: relative;
 }
-
-.container .inner .rolling .imglist {
-    position: absolute;
+.container .inner {
+    height: 1100px;
+}
+.container .inner .imglist {
     left: 0;
     width: 100%;
 }
 
-.container .inner .rolling .imglist .img {
+.container .inner .imglist .img {
     width: 100%;
     height: 550px;
     position: absolute;
     left: 0;
 }
-.container .inner .rolling .imglist .img1 {
+.container .inner .imglist .img1 {
     background: url(../img/mainslide01.jpg) no-repeat center;
     background-size: cover;
     z-index: 2;
 }
-.container .inner .rolling .imglist .img2 {
+.container .inner .imglist .img2 {
     background: url(../img/mainslide02.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
 }
-.container .inner .rolling .imglist .img3 {
+.container .inner .imglist .img3 {
     background: url(../img/mainslide03.jpg) no-repeat center;
     background-size: cover;
 }
 
-.container .inner .rolling .imglist .img div {
+.container .inner .imglist .img div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 200px;
 }
-.container .inner .rolling .imglist .img div p {
+.container .inner .imglist .img div p {
     margin-top: 20px;
     color: #fff;
     font-size: 18px;
+}
+
+.container .inner .place {
+    height: 550px;
+    background: #384d75;
+}
+.container .inner .place h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .inner .place .placelist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .inner .place .placelist li {
+    width: 300px;
+    height: 400px;
+}
+.container .inner .place .placelist li img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
 }
