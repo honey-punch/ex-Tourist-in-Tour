@@ -253,15 +253,17 @@ header .inner .right .menu .submenu li {
 /* container */
 .container {
     width: 100%;
-    height: 1100px;
+    height: 1150px;
     position: relative;
+    background: linear-gradient(rgb(255, 255, 255) 62%, rgb(255, 251, 234) 62%);
 }
 .container .inner {
-    height: 1100px;
+    height: 1150px;
 }
 .container .inner .imglist {
     left: 0;
     width: 100%;
+    height: 550px;
 }
 
 .container .inner .imglist .img {
@@ -298,25 +300,57 @@ header .inner .right .menu .submenu li {
 }
 
 .container .inner .place {
-    height: 550px;
-    background: #384d75;
+    height: 570px;
+    margin-top: 40px;
 }
 .container .inner .place h1 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
 }
 .container .inner .place .placelist {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 .container .inner .place .placelist li {
-    width: 300px;
+    width: 330px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container .inner .place .placelist li h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.container .inner .place .placelist li h2:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #124095;
+}
+.container .inner .place .placelist li p {
+    margin-top: 10px;
+    line-height: 20px;
 }
 .container .inner .place .placelist li img {
-    width: 300px;
+    width: 330px;
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+}
+.container .inner .place .placelist li a:last-child {
+    margin-top: 10px;
+    text-decoration: 3px overline;
+    width: 40px;
+    height: 40px;
+}
+.container .inner .place .placelist li a:last-child {
+    fill: #444;
+}
+.container .inner .place .placelist li a:last-child:hover {
+    fill: #124095;
 }

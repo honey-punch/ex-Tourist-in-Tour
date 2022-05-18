@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     // img fade in & fade out
 
-    $(".imglist li:gt(0)").hide();
+    // $(".imglist li:gt(0)").hide();
     setInterval(function() {
          $(".imglist li:first-child").fadeOut().next('li').fadeIn(500).end().appendTo(".imglist");
      }, 3000);
