@@ -343,14 +343,59 @@ header .inner .right .menu .submenu li {
     overflow: hidden;
 }
 .container .inner .place .placelist li a:last-child {
-    margin-top: 10px;
-    text-decoration: 3px overline;
+    fill: #444;
     width: 40px;
     height: 40px;
-}
-.container .inner .place .placelist li a:last-child {
-    fill: #444;
+    margin-top: 10px;
 }
 .container .inner .place .placelist li a:last-child:hover {
     fill: #124095;
 }
+
+/* container2 */
+.container2 {
+    width: 100%;
+    height: 250px;
+}
+.container2 .inner {
+    height: 250px;
+}
+.container2 .inner .qna {
+    float: left;
+    width: 677px;
+    height: 170px;
+    background: url(../img/bg_app.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .inner .qna div {
+    width: 260px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 0.5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.container2 .inner .qna div a:nth-child(2) {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.container2 .inner .qna div a:nth-child(2):hover {
+    
+}
+.container2 .inner .notice {
+    float: right;
+    width: 330px;
+    height: 170px;
+    margin-top: 40px;
+}
+.container2 .inner .notice ul {
+    list-style: disc inside;
+}
+
